@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvExperience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_switch_start_on"
+            android:paddingBottom="@dimen/h_4"
+            android:paddingLeft="@dimen/w_12"
+            android:paddingRight="@dimen/w_12"
+            android:paddingTop="@dimen/h_4"
+            android:text="@string/rank_experience"
+            android:textColor="#FFFFFFFF" />
+
+        <TextView
+            android:id="@+id/tvWealth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_switch_end_off"
+            android:paddingBottom="@dimen/h_4"
+            android:paddingLeft="@dimen/w_12"
+            android:paddingRight="@dimen/w_12"
+            android:paddingTop="@dimen/h_4"
+            android:text="@string/rank_wealth"
+            android:textColor="#FF8A8A8A" />
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingBottom="@dimen/h_8">
+
+                <RelativeLayout
+                    android:id="@+id/ll1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="vertical">
+
+                    <com.turingoal.common.widget.SquareImageView
+                        android:id="@+id/sivAvatar1"
+                        android:layout_width="@dimen/w_58"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/h_4"
+                        android:src="@drawable/ic_avatar_default" />
+
+                    <TextView
+                        android:id="@+id/tvValue1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/sivAvatar1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/h_2"
+                        android:drawableStart="@drawable/ic_heat1"
+                        android:gravity="center"
+                        android:textColor="#FFFFFFFF" />
+
+                    <TextView
+                        android:id="@+id/tvName1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvValue1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/h_4"
+                        android:textColor="#FFFFFFFF" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ll2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginEnd="@dimen/w_24"
+                    android:layout_marginTop="@dimen/h_20"
+                    android:layout_toStartOf="@id/ll1"
+                    android:orientation="vertical">
+
+                    <com.turingoal.common.widget.SquareImageView
+                        android:id="@+id/sivAvatar2"
+                        android:layout_width="@dimen/w_58"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_avatar_default" />
+
+                    <TextView
+                        android:id="@+id/tvValue2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/sivAvatar2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/h_2"
+                        android:drawableStart="@drawable/ic_heat2"
+                        android:gravity="center"
+                        android:textColor="#FFFFFFFF" />
+
+                    <TextView
+                        android:id="@+id/tvName2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvValue2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/h_4"
+                        android:textColor="#FFFFFFFF" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/ll3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="@dimen/w_24"
+                    android:layout_marginTop="@dimen/h_20"
+                    android:layout_toEndOf="@id/ll1"
+                    android:orientation="vertical">
+
+                    <com.turingoal.common.widget.SquareImageView
+                        android:id="@+id/sivAvatar3"
+                        android:layout_width="@dimen/w_58"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_avatar_default" />
+
+                    <TextView
+                        android:id="@+id/tvValue3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/sivAvatar3"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/h_2"
+                        android:drawableStart="@drawable/ic_heat3"
+                        android:gravity="center"
+                        android:textColor="#FFFFFFFF" />
+
+                    <TextView
+                        android:id="@+id/tvName3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvValue3"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/h_4"
+                        android:textColor="#FFFFFFFF" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvRank"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

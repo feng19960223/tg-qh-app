@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/w_16"
+        android:text="@string/forget_hint" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/w_16"
+        android:paddingStart="@dimen/w_16"
+        app:counterEnabled="true"
+        app:counterMaxLength="45"
+        app:counterOverflowTextAppearance="@style/count_over_text"
+        app:counterTextAppearance="@style/count_text">
+
+        <com.turingoal.common.widget.ClearEditText
+            android:id="@+id/etMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="@string/ruleMail"
+            android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+            android:drawablePadding="@dimen/dp_4"
+            android:hint="@string/forget_mail"
+            android:inputType="textEmailAddress"
+            android:maxLines="1" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnForget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/w_16"
+        android:layout_marginStart="@dimen/w_16"
+        android:layout_marginTop="@dimen/h_28"
+        android:background="@drawable/bg_btn_blue_selector_login"
+        android:enabled="false"
+        android:text="@string/forget_password"
+        android:textColor="#FFFFFFFF"
+        android:textSize="18sp" />
+</LinearLayout>

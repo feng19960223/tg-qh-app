@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/w_12">
+
+    <com.turingoal.common.widget.SquareImageView
+        android:id="@+id/ivPic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/w_40"
+        android:layout_marginStart="@dimen/w_40" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/h_2"
+        android:textColor="#FF000000" />
+
+    <TextView
+        android:id="@+id/tvDescribe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/h_4"
+        android:gravity="center"
+        android:minLines="2"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/h_4"
+        android:textColor="#FF000000" />
+
+    <TextView
+        android:id="@+id/tvBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/h_2"
+        android:background="@drawable/bg_btn_green_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+        android:paddingBottom="@dimen/h_4"
+        android:paddingEnd="@dimen/w_16"
+        android:paddingStart="@dimen/w_16"
+        android:paddingTop="@dimen/h_4"
+        android:text="@string/mall_buy"
+        android:textColor="#FFFFFF" />
+</LinearLayout>

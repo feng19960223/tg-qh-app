@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llPersonal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/h_18"
+        android:paddingStart="@dimen/w_12"
+        android:paddingTop="@dimen/h_12">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.turingoal.common.widget.SquareImageView
+                android:id="@+id/ivAvatar"
+                android:layout_width="@dimen/w_68"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="@dimen/w_4"
+                android:transitionName="transitionNameAvatar"
+                android:src="@drawable/ic_avatar_default"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/tvLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:background="@drawable/bg_btn_red_selector"
+                android:paddingEnd="@dimen/w_4"
+                android:paddingStart="@dimen/w_4"
+                android:text="@string/personal_level_default"
+                android:textColor="#FFFFFF" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/w_12"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:transitionName="transitionNameName"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/h_4"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvWealth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/w_4"
+                    android:drawableStart="@drawable/ic_wealth"
+                    android:gravity="center_vertical"
+                    android:text="@string/personal_wealth_default"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/tvHonor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/w_8"
+                    android:drawablePadding="@dimen/w_4"
+                    android:drawableStart="@drawable/ic_honor"
+                    android:gravity="center_vertical"
+                    android:text="@string/personal_honor_default"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvAttribute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/w_8">
+
+                <TextView
+                    android:id="@+id/tvExperience"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:drawablePadding="@dimen/w_4"
+                    android:drawableStart="@drawable/ic_experience"
+                    android:gravity="center_vertical"
+                    android:text="@string/personal_experience_default" />
+
+                <com.daimajia.numberprogressbar.NumberProgressBar
+                    android:id="@+id/npbExperience"
+                    style="@style/NumberProgressBar_Grace_Yellow"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/w_8">
+
+                <TextView
+                    android:id="@+id/tvLife"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:drawablePadding="@dimen/w_4"
+                    android:drawableStart="@drawable/ic_life"
+                    android:gravity="center_vertical"
+                    android:text="@string/personal_life_default" />
+
+                <com.daimajia.numberprogressbar.NumberProgressBar
+                    android:id="@+id/npbLife"
+                    style="@style/NumberProgressBar_Passing_Green"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    app:progress_current="100" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/w_8">
+
+                <TextView
+                    android:id="@+id/tvStamina"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:drawablePadding="@dimen/w_4"
+                    android:drawableStart="@drawable/ic_stamina"
+                    android:gravity="center_vertical"
+                    android:text="@string/personal_stamina_default" />
+
+                <com.daimajia.numberprogressbar.NumberProgressBar
+                    android:id="@+id/npbStamina"
+                    style="@style/NumberProgressBar_Warning_Red"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    app:progress_current="100" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvAudit"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/listPreferredItemHeightSmall"
+            android:layout_marginTop="@dimen/h_8"
+            android:background="#FFFFFF"
+            android:clickable="true"
+            android:drawableEnd="@drawable/ic_arrow_end_24dp"
+            android:drawablePadding="@dimen/w_8"
+            android:drawableStart="@drawable/ic_audit"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/w_8"
+            android:paddingStart="@dimen/w_8"
+            android:text="@string/personal_audit"
+            android:textColor="#000000" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginEnd="@dimen/w_8"
+            android:layout_marginStart="@dimen/w_8"
+            android:background="@color/line" />
+
+        <TextView
+            android:id="@+id/tvAttendance"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/listPreferredItemHeightSmall"
+            android:background="#FFFFFF"
+            android:clickable="true"
+            android:drawableEnd="@drawable/ic_arrow_end_24dp"
+            android:drawablePadding="@dimen/w_8"
+            android:drawableStart="@drawable/ic_attendance"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/w_8"
+            android:paddingStart="@dimen/w_8"
+            android:text="@string/personal_attendance"
+            android:textColor="#000000" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginEnd="@dimen/w_8"
+            android:layout_marginStart="@dimen/w_8"
+            android:background="@color/line" />
+
+        <TextView
+            android:id="@+id/tvMallMe"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/listPreferredItemHeightSmall"
+            android:background="#FFFFFF"
+            android:clickable="true"
+            android:drawableEnd="@drawable/ic_arrow_end_24dp"
+            android:drawablePadding="@dimen/w_8"
+            android:drawableStart="@drawable/ic_mall_me"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/w_8"
+            android:paddingStart="@dimen/w_8"
+            android:text="@string/personal_mall_me"
+            android:textColor="#000000" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginEnd="@dimen/w_8"
+            android:layout_marginStart="@dimen/w_8"
+            android:background="@color/line" />
+
+        <TextView
+            android:id="@+id/tvTeam"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/listPreferredItemHeightSmall"
+            android:background="#FFFFFF"
+            android:clickable="true"
+            android:drawableEnd="@drawable/ic_arrow_end_24dp"
+            android:drawablePadding="@dimen/w_8"
+            android:drawableStart="@drawable/ic_team"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/w_8"
+            android:paddingStart="@dimen/w_8"
+            android:text="@string/personal_team"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvSetting"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/listPreferredItemHeightSmall"
+            android:layout_marginTop="@dimen/h_8"
+            android:background="#FFFFFF"
+            android:clickable="true"
+            android:drawableEnd="@drawable/ic_arrow_end_24dp"
+            android:drawablePadding="@dimen/w_8"
+            android:drawableStart="@drawable/ic_settings_applications_black_24dp"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/w_8"
+            android:paddingStart="@dimen/w_8"
+            android:text="@string/personal_setting"
+            android:textColor="#000000" />
+    </LinearLayout>
+</LinearLayout>

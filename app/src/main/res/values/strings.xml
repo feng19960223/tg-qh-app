@@ -1,0 +1,248 @@
+<resources>
+    <string name="app_name">企航</string>
+
+    <string name="activity_mall">道具商城</string>
+    <string name="activity_rank">排行榜</string>
+    <string name="activity_leave">请假</string>
+    <string name="activity_overtime">加班申请</string>
+    <string name="activity_billboard">公告牌</string>
+    <string name="activity_web">常用网址</string>
+    <string name="activity_dynamic">公司动态</string>
+    <string name="activity_system">规章制度</string>
+    <string name="activity_daily_add">填写日报</string>
+    <string name="activity_daily_history">日报历史</string>
+    <string name="activity_daily_details">日报</string>
+    <string name="activity_weekly_add">填写周报</string>
+    <string name="activity_weekly_history">周报历史</string>
+    <string name="activity_weekly_details">周报</string>
+    <string name="activity_mall_my">我的道具</string>
+    <string name="activity_leave_add">写假条</string>
+    <string name="activity_leave_details">假条详情</string>
+    <string name="activity_overtime_add">填写申请</string>
+    <string name="activity_overtime_details">申请详情</string>
+    <string name="activity_memo">备忘录</string>
+    <string name="activity_memo_add">新建备忘</string>
+    <string name="activity_memo_update">修改备忘</string>
+    <string name="activity_billboard_details">公告牌</string>
+    <string name="activity_web_add">添加网址</string>
+    <string name="activity_web_update">网址修改</string>
+    <string name="activity_hall_all">全部任务</string>
+    <string name="activity_hall_assigned">指派任务</string>
+    <string name="activity_hall_conventional">常规任务</string>
+    <string name="activity_hall_reward">悬赏任务</string>
+    <string name="activity_task">我的任务</string>
+    <string name="activity_level">等级规则</string>
+    <string name="activity_honor">头衔规则</string>
+    <string name="activity_attribute">成长记录</string>
+    <string name="activity_audit">审核任务</string>
+    <string name="activity_audit_details">审核任务</string>
+    <string name="activity_attendance">考勤记录</string>
+    <string name="activity_team">团队成员</string>
+    <string name="activity_team_details">团队成员</string>
+    <string name="activity_setting">设置</string>
+    <string name="activity_address">地址</string>
+    <string name="activity_stage_name">花名</string>
+    <string name="activity_phone">手机</string>
+    <string name="activity_tencent">QQ号</string>
+    <string name="activity_wechat">微信号</string>
+    <string name="activity_telephone">电话</string>
+    <string name="activity_login">登录</string>
+    <string name="activity_forget">找回密码</string>
+    <string name="activity_register">注册</string>
+    <string name="activity_agreement">服务协议</string>
+
+    <!--主页面底部-->
+    <string name="title_main">首页</string>
+    <string name="title_hall">大厅</string>
+    <string name="title_task">任务</string>
+    <string name="title_memo">备忘录</string>
+    <string name="title_personal">个人中心</string>
+
+    <!--主页面顶部-->
+    <string name="toolbar_main">企航</string>
+    <string name="toolbar_hall">大厅</string>
+    <string name="toolbar_task">任务</string>
+    <string name="toolbar_memo">备忘录</string>
+    <string name="toolbar_personal">个人中心</string>
+
+    <!--首页功能-->
+    <string name="fun_mall">道具商城</string>
+    <string name="fun_rank">排行榜</string>
+    <string name="fun_leave">请假</string>
+    <string name="fun_overtime">加班申请</string>
+
+    <!--首页-->
+    <string name="main_billboard">公告牌</string>
+    <string name="main_web">常用网址</string>
+    <string name="main_dynamic">公司动态</string>
+    <string name="main_system">规章制度</string>
+    <string name="main_more">更多</string>
+    <string name="main_details">详情</string>
+
+    <!--任务大厅-->
+    <string name="tab_all">全部任务</string>
+    <string name="tab_conventional">常规任务</string>
+    <string name="tab_reward">悬赏任务</string>
+    <string name="tab_assigned">指派任务</string>
+
+    <!--我的任务-->
+    <string name="task_sign_in">签到</string>
+    <string name="task_sign_in_hint">每日签到获取奖励</string>
+    <string name="task_daily">日报</string>
+    <string name="task_daily_hint">完成日报获取奖励</string>
+    <string name="task_weekly">周报</string>
+    <string name="task_weekly_hint">完成周报获取奖励</string>
+    <string name="task_over">已完成</string>
+    <string name="task_start">前往</string>
+    <string name="task_me">我的任务</string>
+
+    <!--日报周报-->
+    <string name="submit">提交</string>
+
+    <!--签到历史-->
+    <string name="history_sign_in">签到</string>
+    <string name="history_sign_in_over">今日已签到！</string>
+    <string name="history_sign_in_hint">您已连续签到  %1$s  天，总共签到  %2$s  天！</string>
+    <string name="history_sign_in_today">今日</string>
+    <string name="history_sign_in_month_day">%1$d月%2$d日</string>
+
+    <!--道具商城-->
+    <string name="mall_life">生命道具</string>
+    <string name="mall_stamina">体力药水</string>
+    <string name="mall_back">回城道具</string>
+    <string name="mall_me">我的道具</string>
+    <string name="mall_look">查看</string>
+    <string name="mall_buy">购买</string>
+    <string name="mall_restore">恢复值：%1$d</string>
+    <string name="mall_price">所需财富：%1$d</string>
+
+    <!--排行榜-->
+    <string name="rank_experience">经验榜</string>
+    <string name="rank_wealth">财富榜</string>
+    <string name="rank_num">No.%1$d</string>
+    <string name="rank_value_experience">经验值：%1$d</string>
+    <string name="rank_value_wealth">财富值：%1$d</string>
+    <string name="rank_name_default">暂无</string>
+
+    <!--个人中心-->
+    <string name="personal_level_default">LV1</string>
+    <string name="personal_level">LV%1$d</string>
+    <string name="personal_wealth_default">财富：0</string>
+    <string name="personal_wealth">财富：%1$d</string>
+    <string name="personal_honor_default">头衔：暂无头衔</string>
+    <string name="personal_honor">头衔：%1$s</string>
+    <string name="personal_experience_default">经验值：0</string>
+    <string name="personal_experience">经验值：%1$d</string>
+    <string name="personal_life_default">生命值：100</string>
+    <string name="personal_life">生命值：%1$d</string>
+    <string name="personal_stamina_default">体力值：100</string>
+    <string name="personal_stamina">体力值：%1$d</string>
+    <string name="personal_audit">审核任务</string>
+    <string name="personal_attendance">考勤记录</string>
+    <string name="personal_mall_me">道具使用</string>
+    <string name="personal_team">团队成员</string>
+    <string name="personal_setting">设置</string>
+
+    <!--个人信息-->
+    <string name="personal_empty">空白</string>
+    <string name="personal_entry_time">入职时间</string>
+    <string name="personal_stage_name">花名</string>
+    <string name="personal_gender">性别</string>
+    <string name="personal_gender_man">男</string>
+    <string name="personal_gender_woman">女</string>
+    <string-array name="personal_gender">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+    <string name="personal_phone">手机</string>
+    <string name="personal_birthday">生日</string>
+    <string name="personal_tencent">QQ号</string>
+    <string name="personal_wechat">微信</string>
+    <string name="personal_telephone">电话</string>
+
+    <!--团队成员信息-->
+    <string name="team_address">地址</string>
+    <string name="team_mail">邮箱</string>
+
+    <!--登录-->
+    <string name="string_login_username">邮箱账号</string>
+    <string name="string_password">密码</string>
+    <string name="string_login">登录</string>
+    <string name="string_forget">忘记密码</string>
+    <string name="string_register">注册</string>
+    <string name="string_username_max_hint">用户名最大长度是45</string>
+    <string name="string_password_max_hint">密码的最大长度是24</string>
+    <string name="string_username_min_hint">用户名最小长度是5</string>
+    <string name="string_password_min_hint">密码的最小长度是6</string>
+
+    <!--找回密码-->
+    <string name="forget_hint">找回密码需要通过注册时使用的邮箱验证</string>
+    <string name="forget_mail">请输入注册使用的邮箱</string>
+    <string name="forget_password">找回密码</string>
+    <string name="string_mail_max_hint">邮箱最大长度是45</string>
+    <string name="string_mail_min_hint">邮箱的最小长度是6</string>
+    <string name="string_mail_verify_hint">邮箱格式不正确</string>
+    <string name="string_mail_forget">重置链接已发送至您的邮箱中</string>
+
+    <!--注册-->
+    <string name="register_enterprise">企业全称</string>
+    <string name="register_username">管理员姓名</string>
+    <string name="register_mail">邮箱（用于登录和找回密码）</string>
+    <string name="register_password">密码（6&#8211;24位）</string>
+    <string name="register_password2">确认密码</string>
+    <string name="register_agree">已阅读并同意</string>
+    <string name="register_agreement">《17企航服务协议》</string>
+    <string name="register">立即注冊</string>
+    <string name="agree_no">请阅读并同意《17企航服务协议》</string>
+    <string name="enterprise_no">企业全称长度为2&#8211;25个字符</string>
+    <string name="username_no">管理员姓名长度为2&#8211;10个字符</string>
+    <string name="mail_no">邮箱格式不正确</string>
+    <string name="password_no">密码必须6到24位，且不能出现空格</string>
+    <string name="password2_no">再次输入密码不能为空！</string>
+    <string name="password12_no">密码输入不一致</string>
+    <string name="register_success">注册成功，账号激活邮件已发送至您的邮箱。</string>
+
+    <!--修改地址-->
+    <string name="address">地址</string>
+    <!--修改花名-->
+    <string name="stageName">花名</string>
+    <!--修改手机-->
+    <string name="phone">手机</string>
+    <string name="phone_no">请输入正确的手机号</string>
+    <!--修改QQ号-->
+    <string name="tencent">QQ号</string>
+
+    <!--修改微信号-->
+    <string name="wechat">微信号</string>
+    <!--修改电话-->
+    <string name="telephone">电话</string>
+    <string name="telephone_no">请输入正确的电话号</string>
+
+    <!--弹出选择框的提示选择语-->
+    <string name="hint_title_select">请选择</string>
+    <!--空白-->
+    <string name="common_blank"></string>
+    <string name="yes">确定</string>
+    <string name="cancel">取消</string>
+    <string name="delete">删除</string>
+    <string name="update">更新</string>
+    <string name="save">保存</string>
+    <string name="complete">完成</string>
+    <string name="back_return">返回</string>
+    <string name="noData">没有数据</string>
+    <!--空白-->
+    <string name="common_test">测试数据</string>
+    <!--软件 titel-->
+    <string name="app_title">企航</string>
+    <!-- 再按一次退出程序-->
+    <string name="dbclick_exit">再按一次退出程序</string>
+    <!-- 登录信息过去-->
+    <string name="token_expired">登录信息已过期，请重新登录！</string>
+    <string name="empty">没有数据~</string>
+    <string name="error">出错了~</string>
+    <string name="load">加载中~</string>
+    <!--EditText可以输入的字符-->
+    <string name="ruleAZaz09">0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM</string>
+    <string name="rule09">0123456789</string>
+    <string name="ruleMail">0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM@.</string>
+</resources>

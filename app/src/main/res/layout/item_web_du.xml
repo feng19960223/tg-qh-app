@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mainBg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/h_4"
+    android:paddingTop="@dimen/h_4">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tvUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginEnd="@dimen/w_8"
+        android:background="@drawable/bg_btn_green_selector"
+        android:paddingBottom="@dimen/w_8"
+        android:paddingEnd="@dimen/w_16"
+        android:paddingStart="@dimen/w_16"
+        android:paddingTop="@dimen/w_8"
+        android:text="@string/update"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tvDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginEnd="@dimen/w_8"
+        android:background="@drawable/bg_btn_red_selector"
+        android:paddingBottom="@dimen/w_8"
+        android:paddingEnd="@dimen/w_16"
+        android:paddingStart="@dimen/w_16"
+        android:paddingTop="@dimen/w_8"
+        android:text="@string/delete"
+        android:textColor="@android:color/white" />
+</LinearLayout>

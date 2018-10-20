@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <ImageView
+        android:layout_width="@dimen/w_80"
+        android:layout_height="@dimen/w_80"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/h_24"
+        android:layout_marginTop="@dimen/h_24"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/w_16"
+        android:layout_marginStart="@dimen/w_16">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/w_16"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterEnabled="true"
+                app:counterMaxLength="45"
+                app:counterOverflowTextAppearance="@style/count_over_text"
+                app:counterTextAppearance="@style/count_text">
+
+                <com.turingoal.common.widget.ClearEditText
+                    android:id="@+id/etUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="@string/ruleMail"
+                    android:drawableLeft="@drawable/ic_user_24dp"
+                    android:drawablePadding="@dimen/dp_4"
+                    android:hint="@string/string_login_username"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:counterEnabled="true"
+                app:counterMaxLength="24"
+                app:counterOverflowTextAppearance="@style/count_over_text"
+                app:counterTextAppearance="@style/count_text">
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/h_8"
+                    android:digits="@string/ruleAZaz09"
+                    android:drawablePadding="@dimen/dp_4"
+                    android:drawableStart="@drawable/ic_lock_24dp"
+                    android:hint="@string/string_password"
+                    android:inputType="textPassword"
+                    android:maxLines="1" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn_blue_selector_login"
+                android:enabled="false"
+                android:text="@string/string_login"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18sp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/h_12">
+
+                <TextView
+                    android:id="@+id/tvForget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_forget"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvRegister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="@string/string_register"
+                    android:textSize="16sp" />
+            </FrameLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

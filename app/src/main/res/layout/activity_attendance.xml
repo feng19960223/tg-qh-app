@@ -1,0 +1,160 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/rlTool"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/tvMonthDay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/w_8"
+            android:textColor="#000000"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/tvMonthDay"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/h_8"
+            android:paddingLeft="@dimen/h_4"
+            android:paddingRight="@dimen/h_4"
+            android:paddingTop="@dimen/h_8">
+
+            <TextView
+                android:id="@+id/tvYear"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tvLunar"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/flCurrent"
+            android:layout_width="@dimen/w_28"
+            android:layout_height="@dimen/w_28"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/w_8"
+            android:background="@drawable/bg_ripple">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/w_2"
+                android:src="@drawable/ic_calendar"
+                android:tint="#000000" />
+
+            <TextView
+                android:id="@+id/tvCurrentDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/h_2"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <com.haibin.calendarview.CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:current_day_lunar_text_color="#ff0000"
+        app:current_day_text_color="#ff0000"
+        app:current_month_lunar_text_color="#CFCFCF"
+        app:current_month_text_color="#333333"
+        app:lunar_text_size="10sp"
+        app:max_year="2022"
+        app:max_year_month="12"
+        app:min_year="2016"
+        app:min_year_month="9"
+        app:month_view_show_mode="mode_only_current"
+        app:other_month_lunar_text_color="#e1e1e1"
+        app:other_month_text_color="#e1e1e1"
+        app:scheme_lunar_text_color="#CFCFCF"
+        app:scheme_text="签"
+        app:scheme_text_color="#333"
+        app:scheme_theme_color="#128c4b"
+        app:selected_lunar_text_color="#128c4b"
+        app:selected_text_color="#128c4b"
+        app:selected_theme_color="#80cfcfcf"
+        app:week_background="#fff"
+        app:week_bar_height="46dp"
+        app:week_line_background="#00000000"
+        app:year_view_background="#f6f6f6"
+        app:year_view_day_text_color="#333333"
+        app:year_view_day_text_size="9sp"
+        app:year_view_month_text_color="#ff0000"
+        app:year_view_month_text_size="20sp"
+        app:year_view_scheme_color="#f17706" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/h_12"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/w_8"
+        android:paddingStart="@dimen/w_8">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/w_4"
+            android:drawableStart="@drawable/ic_point1"
+            android:gravity="center_vertical"
+            android:text="迟到" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/w_4"
+            android:drawableStart="@drawable/ic_point2"
+            android:gravity="center_vertical"
+            android:text="早退" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/w_4"
+            android:drawableStart="@drawable/ic_point3"
+            android:gravity="center_vertical"
+            android:text="加班" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/w_4"
+            android:drawableStart="@drawable/ic_point4"
+            android:gravity="center_vertical"
+            android:text="请假" />
+    </LinearLayout>
+</LinearLayout>
